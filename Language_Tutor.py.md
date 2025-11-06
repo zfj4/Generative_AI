@@ -1,5 +1,5 @@
 ### Language Tutor
-This Python code uses the Gemini API to role prompt with system instructions and submit user prompts for second language tutoring. It initially allows for French and Spanish tutoring.
+This Python code uses the Gemini API to role prompt with system instructions and submit user prompts for second language tutoring. It initially allowed for French and Spanish tutoring. Gemini makes it easy to add other languages, so German, Italian, and Portuguese were soon added.
 ```
 # Run this if the import genai statement throws an exception.
 #%pip install --upgrade --quiet google-genai
@@ -31,6 +31,21 @@ You will give your feedback in English.
         language_strings.append("Su traducción:")
         language_strings.append('hasta pronto')
         language_strings.append("¿Qué otras palabras le gustaría traducir?")
+    elif language.capitalize() == 'German':
+        language_strings.append("Hallo! Ich bin Ihr Deutsch-Tutor. Welche Wörter möchten Sie übersetzen lassen? (Um zu beenden, tippen Sie 'Bis zum nächsten Mal')")
+        language_strings.append("Ihre Übersetzung:")
+        language_strings.append('Bis zum nächsten Mal')
+        language_strings.append("Welche weiteren Wörter möchten Sie übersetzen lassen?")
+    elif language.capitalize() == 'Italian':
+        language_strings.append("Ciao! Sono il tuo tutor di Italiano. Quali parole vorresti tradurre? (Per uscire, digita 'Alla prossima')")
+        language_strings.append("La tua traduzione:")
+        language_strings.append('Alla prossima')
+        language_strings.append("Quali altre parole vorresti tradurre?")
+    elif language.capitalize() == 'Portuguese':
+        language_strings.append("Olá! Eu sou o seu tutor de Português. Que palavras gostaria de traduzir? (Para sair, digite 'Até à próxima')")
+        language_strings.append("A sua tradução:")
+        language_strings.append('Até à próxima')
+        language_strings.append("Que outras palavras gostaria de traduzir?")
     else:
         display(Markdown(f"Sorry, I am not a {language} tutor."))
         language_strings.append(None)
