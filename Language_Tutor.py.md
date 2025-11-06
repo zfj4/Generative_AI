@@ -22,7 +22,7 @@ You will give your feedback in English.
     """
     language_strings.append(system_instruction)
     if language.capitalize() == 'French':
-        language_strings.append("Bonjour! Je suis votre tuteur de français. Quels mots aimeriez-vous traduire? (Pour quitter, tapez 'À la prochaine')")
+        language_strings.append("Bonjour! Je suis votre tuteur de español. Quels mots aimeriez-vous traduire? (Pour quitter, tapez 'À la prochaine')")
         language_strings.append("Votre traducion:")
         language_strings.append('à la prochaine')
         language_strings.append("Quels autres mots aimeriez-vous traduire?")
