@@ -1,4 +1,5 @@
-## Language Tutor
+### Language Tutor
+This Python code uses the Gemini API to role prompt with system instructions and submit user prompts for second language tutoring. It initially allows for French and Spanish tutoring.
 ```
 # Run this if the import genai statement throws an exception.
 #%pip install --upgrade --quiet google-genai
