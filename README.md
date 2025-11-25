@@ -1,5 +1,5 @@
-## Google Gemini Gem Instructions
-This is where I save the instructions that I give to Gems.
+## Prompting with Goggle Gems and Python
+This is where I save the instructions that I give to Gems and Python code for Gemini API calls.
 ### What color is that?
 This Gem is to assist those with duteranomoly red-green colorblindness. It instructs the Gem in receiving an image and describing the colors of elements in the image. It directs the Gem to provide descriptions that I find useful, including RGB values and similarities to well-known products or sports teams. With these instructions, the Gem can describe one or more colors of a specified object like an article of clothing or a painting. It can advise whether articles of clothing go together in an outfit and explain why or why not.
 ### French Tutor
